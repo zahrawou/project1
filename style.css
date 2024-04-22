@@ -1,0 +1,414 @@
+/*introuduction to css
+/*--Inline, Internal, External
+
+body{
+    background-color: black;
+}
+h1 {
+    color: honeydew;
+}
+#p1{
+    color: red;
+}
+*/
+
+/* ------------------------*/
+/*fonts*/
+/*
+@font-face {
+    font-family: Roboto-Light;;
+    src: url(fonts/roboto-light.eot);
+}
+h1{
+    font-family: Roboto,vendana,arial;
+}
+p{
+    font-family: verdana,geneva,sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+*/
+/* ------------------------*/
+/*borders
+h1{
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
+    border-radius: 20px;
+}
+p{
+    border:3px solid rgb(39, 218, 249);
+    border-top:3px solid rgb(214, 249, 39);
+    border-right:3px solid rgb(39, 57, 249);
+    border-left:3px solid rgb(249, 39, 39);
+}
+*/
+/* ------------------------*/
+/* shadaows
+h1{
+    text-shadow: 3px 3px 5px hsl(0, 100, 60);
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(170, 164, 164);
+    box-shadow: 3px 3px 5px ;
+}
+*/
+/* margins =space around an element*/
+/*
+body {
+    margin: 0px;
+}
+.box{
+    border:5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    /*margin: 50px;
+}
+#box1{
+    background-color: brown;
+    margin-left: auto;
+}
+#box2{
+    background-color: blue;
+}
+
+*/
+/* float = allows other elements to flow around it
+body{
+    border: 3px solid;
+    display: flow-root;
+}
+#box1{
+    float: left;
+    margin-right: 10px;
+    float:right;
+    margin-left: 10px;
+}
+*/
+/*overflow = property that sets the desired
+behavior when content does not fit in the parent element box(overflow)
+
+overflow = visible.
+overflow = hidden.
+overflow = scroll.
+overflow = auto.
+overflow = clip.
+div{
+    border: 2px solid ;
+    height: 75px;
+    overflow: clip;
+    overflow-clip-margin: 13px;
+}
+*/
+
+/*------------------------------------------------------*/
+/*display = property specifies if/how an element is displayed
+block-level = start on a new line,take up the full width available
+        (h1,div,p,from,header,footer)
+inline = do nt start on a new line, width is limited to what is needed
+    (span,a,img)
+
+div{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    display: block;
+    display:inline-block;
+    visibility: hidden;
+}
+span{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+*/
+/*--------------------------------*/
+/*height and width
+*{
+    box-sizing: border-box;
+}
+.box{
+    border:2px solid ;
+    padding:25px;
+    height:auto;
+    width:50%;
+    float:left;
+    text-align:center;
+
+    min-width:75%;
+    max-width:100%;
+}
+*/
+/*--------------------------------*/
+/*position::
+    relation = position relative to to where its normally 
+    fixed = position relative to the viewport
+    absolute = position relative to nearest ancestor
+    sticky = position based on scroll position
+    satatic = default position for an element
+    
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+    /*position: relative;*/
+    /*position: fixed;
+    position: sticky;
+    top:0px;
+    left: 100px;
+}   
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /*position: absolute;
+    /*position: fixed;
+    position: static;
+    top:50px;
+    left: 50px;
+} 
+*/ 
+/*--------------------------------*/
+/*background image 
+body{
+    background-image: url(5593.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+*/
+/*--------------------------------*/
+
+/*combinators*/
+/*
+    combinators = explains the relationship between listed selrctors.
+    space" " = descendant
+    > = child
+    ~ = general sibling
+    + = adjacent sibling
+
+#container{
+    border:2px solid ;
+}
+#container ~ p{
+    background-color: chartreuse;
+}
+*/
+/*--------------------------------*/
+/*pseudo classes
+button:hover{
+    font-size:1.1em;
+    background-color: yellow;
+}
+button:active{
+    font-size:1.2em;
+    background-color: green;
+}
+
+a:link{
+    color: blue;
+}
+a:hover{
+    color: rgb(77, 77, 237);
+    font-size: 1.1em;
+}
+a:active{
+    color: blueviolet;
+    font-size: 1.1em;
+}
+a:visited{
+    color: purple;
+}
+li:hover{
+    background-color: yellow;
+}
+li:not(:hover){
+    background-color: rgb(51, 50, 50);
+}
+li:nth-child(3){
+    background-color: chartreuse;
+}
+#greeting{
+    background-color: antiquewhite;
+    padding: 10px;
+    display: none;
+}
+#greeting:hover p {
+display:block ;
+}
+*/
+/*-----------------------------*/
+/*pseudo-element = keyword added after a selector that's used
+    to style a specific parts of an element
+    selector :: pseudo-element
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}  
+p::first-line{
+    background-color: rgb(216, 216, 38);
+}
+p::selection{
+    color:aquamarine;
+    background-color: rgb(216, 216, 38);
+}
+#fruit li::before{
+    content: "-";
+}
+#apple::after{
+    content: "🍎";
+}
+#banana::before{
+    content: "🍌";
+}
+#orange::before{
+    content: "🍊";
+}
+#fruit li::marker{
+    content: "~";
+    color: rgb(95, 95, 93);
+    font-size: 1.2em;
+}
+*/
+/*-----------------------------*/
+/*pagination*/
+/* pagination = method by which a document is
+    separated into pages,
+    and numbers are given
+
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.pagination a.active {
+    background-color: chartreuse;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active) {
+    background-color: rgb(216, 216, 38);
+    border-radius: 5px;}
+*/
+/*-----------------------------*/
+/*dropdown menus*/
+/*
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: rgba(213, 207, 199, 0.837);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    color :black;
+    text-decoration: none;
+    background-color: rgba(240, 255, 255, 0.475);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+.dropdown .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: rgb(65, 63, 63);
+}
+.dropdown a:hover{
+    background-color: rgb(42, 42, 42);
+
+}
+*/
+/*-----------------------------*/
+/*navigation bar*/
+/*
+body{
+    margin: 0%;
+}
+main{
+    margin: 20px;
+}
+h1{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(135, 133, 133);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(216, 216, 38);
+}
+.navbar li{
+    float: left;
+}
+*/
+/*---------------------------------------*/
+/*--website layout-->*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+header {
+    background-color: gray;
+    text-align: center;
+    padding: 25px;
+}
+.navbar{
+    background-color: rgb(87, 86, 86);
+    height: 50px;
+
+}
+aside{
+    width: 20px;
+    float :left;
+    padding: 10px;
+}
+section{
+    width: 40px;
+    float :right;
+    padding: 10px;
+
+}
+article{
+    width: 40px;
+    float :left;
+    padding :10px;
+}
+footer {
+    display: block;
+    clear:both;
+    background-color: gray;
+    text-align: center;
+    padding: 25px;
+}
