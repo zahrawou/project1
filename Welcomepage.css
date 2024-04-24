@@ -1,0 +1,113 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    height: 500px;
+    width: auto;
+    background-color: #909ACD;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.header p{
+   font-size: 100px;
+  
+   margin: 190px 0px 0px 3000px;
+}
+.header img.b{
+    margin: 00px 0px 0px 200px;
+    width: 400px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #1C296C;
+
+}
+.header a:hover{ 
+    color:  white; 
+    text-decoration: underline; 
+   }
+.a h1 {
+    font-size: 150px;
+    margin: 300px 0px 0px 600px;
+    text-shadow: 5px 5px 2px ;
+    font-weight: 500;
+    position: absolute;
+    z-index: 1;
+}
+
+.c{
+    border: 1px solid transparent;
+    background-color: #1C296C;
+    width: 5150px;
+    height: 500px;
+    
+    position: absolute;
+    z-index: 1;
+    margin: 1900px 0px 0px 600px;
+}
+.a p {
+    font-size: 100px;
+    margin: 1000px 0px 0px 600px;
+    position: absolute;
+    z-index: 1;
+}
+.s{
+    width: 800px;
+    height: 220px;
+    margin: 1400px 0px 0px 600px;
+    border: 1px solid transparent;
+    background-color: #1C296C;
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+    border-radius: 100px;
+    position: absolute;
+    z-index: 1;
+
+}
+.c .a {
+    width: 350px;
+    margin: 90px 0px 0px 1000px;
+    position: absolute;
+    z-index: 1;
+}
+.c .b{
+    width: 380px;
+    margin: 40px 0px 0px 2350px;
+    position: absolute;
+    z-index: 1;
+}
+.c .d{
+    width: 350px;
+    margin: 90px 0px 0px 3650px;
+    position: absolute;
+    z-index: 1;
+}
+.f{
+    width: 1700px;
+    height: 1500px;
+    border: 1px solid transparent;
+    background-color: #1C296C;
+    margin: 200px 0px 0px 4000px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.h {
+    width: 1700px;
+    margin: 500px 0px 0px 4050px;
+    position: absolute;
+    z-index: 1;
+}
