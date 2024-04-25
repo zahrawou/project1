@@ -6,8 +6,7 @@
 body{
 
   display: flex;
-   flex-direction: column;   /*  (footer) عشان لما كنت اعمل فوتر  ظهر لي مسافة بينه وبين اسف ام الصفحة المعوقة */ 
-    
+   flex-direction: column;   
     margin: 0;
     font-family: "Montserrat", sans-serif;
 }
