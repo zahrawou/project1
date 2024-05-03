@@ -1,0 +1,338 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    height: 600px;
+    width: auto;
+    background-color: #A9B7FF;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.header a{
+    text-decoration: none;
+    color: #1C296C;
+
+}
+.header a:hover{ 
+    color:  white; 
+    text-decoration: underline; 
+   }
+.header img{
+    margin: 20px 0px 0px 80px;
+    align-self:  flex-start;
+    
+    width: 90px;
+
+}
+
+
+
+.header input {
+    background: #1C296C;
+    height: 55px;
+    width: 150px;
+    margin: 30px 0px 0px 1700px;
+    font-size: 30px;
+    border: #1C296C;
+    color: white;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.header img.ss{
+    
+    width: 960px;
+    margin: 162px 0px 0px 890px;
+    position: absolute;
+}
+
+.header img.dd{
+    width: 700px;
+    margin: 230px 0px 0px 1020px;
+    z-index: 1;
+    position: absolute;
+}
+.header p.title{
+    font-size: 85px;
+    font-weight: 600;
+    margin: 290px 0px 0px 100px ;
+    color:#1C296C;
+    text-shadow: 5px 10px 8px ;
+    position: absolute;
+}
+.header p.title1{
+    font-size: 85px;
+    font-weight: 600;
+    margin: 380px 0px 0px 200px ;
+    color:#1C296C;
+    text-shadow: 5px 10px 8px ;
+    position: absolute;
+}
+.header p{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 40px 0px 0px 950px;
+    position: absolute;
+ }
+ .header .fa-regular.fa-circle-question{
+    font-size: 50px;
+    color: #1C296C;
+    background-color: #A9B7FF;
+    margin: 46px 0px 0px 80px;
+ }
+ .ka select{
+    width: 300px;
+    height:80px;
+    font-size: 40px;
+    text-align: center;
+    background-color: #1C296C;
+    color: white;
+    border-radius: 4px;
+    margin: 70px 0px 0px 790px;
+}
+.ka h1{
+    font-size: 90px;
+    margin: 50px 0px 0px 80px;
+    color: #333333;
+    
+}
+.border{
+    width: 1800px;
+    height: 2200px;
+    border: 1px solid #BDBDBD;
+    margin: 80px 0px 0px 50px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px gray;
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    
+}
+.border .a{
+    width: 1730px;
+    height: 80px;
+    border-radius:10px;
+    margin: 40px 0px 0px 40px;
+    color: #000;
+    border: 1px solid #A7A4A4;
+    font-size: 30px;
+    padding: 0px 0px 0px 80px;
+}
+.border .fa-solid.fa-magnifying-glass{
+    font-size: 40px;
+    color: #A7A4A4;
+    margin: 59px 0px 0px 60px;
+    position: absolute;
+    z-index: 1;
+}
+.border .b{
+    border: 1px solid #A7A4A4;
+    width: 1728px ;
+    height: 80px;
+    margin: 160px 0px 0px 40px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.border .b .c{
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    margin: 24px 0px 0px 20px;
+
+}
+.border .b .d{
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    margin: 24px 0px 0px 790px;
+}
+.border .b .e{
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    margin: 24px 0px 0px 1500px;
+}
+.border .border1{
+    border: 8px solid #D9D9D9;
+    width: 1715px;
+    height: 130px;
+    margin: 320px 0px 0px 40px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+.border .border2 {
+    border: 8px solid #D9D9D9;
+    width: 1715px;
+    height: 130px;
+    margin: 550px 0px 0px 40px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+.border .border3 {
+    border: 8px solid #D9D9D9;
+    width: 1715px;
+    height: 130px;
+    margin: 780px 0px 0px 40px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1;
+}
+.border .border4 {
+    border: 8px solid #D9D9D9;
+    width: 1715px;
+    height: 130px;
+    margin: 1010px 0px 0px 40px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+.border .border5 {
+    border: 8px solid #D9D9D9;
+    width: 1715px;
+    height: 130px;
+    margin: 1240px 0px 0px 40px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+.border .border6 {
+    border: 8px solid #D9D9D9;
+    width: 1715px;
+    height: 130px;
+    margin: 1470px 0px 0px 40px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+.border .border7 {
+    border: 8px solid #D9D9D9;
+    width: 1715px;
+    height: 130px;
+    margin: 1700px 0px 0px 40px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+.border .border8 {
+    border: 8px solid #D9D9D9;
+    width: 1715px;
+    height: 130px;
+    margin: 1930px 0px 0px 40px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+.border  .aa{
+    width: 500px;
+    height: 50px;
+    border: 8px solid #C5C5C5;
+    background-color: #C5C5C5;
+    border-radius: 40px;
+    margin: 34px  ;
+    position: absolute;
+    z-index: 1;
+}
+.border  .bb{
+    width: 390px;
+    height: 50px;
+    border: 8px solid #C5C5C5;
+    background-color: #C5C5C5;
+    border-radius: 40px;
+    margin: 34px 0px 0px 700px;
+    position: absolute;
+    z-index: 1;
+}
+.border  .cc{
+    width: 250px;
+    height: 50px;
+    border: 8px solid #C5C5C5;
+    background-color: #C5C5C5;
+    border-radius: 40px;
+    margin: 34px 0px 0px 1400px ;
+    position: absolute;
+    z-index: 1;
+}
+.border .q{
+    width: 400px;
+    height: 80px;
+    background-color: #1C296C;
+    margin: 1950px 0px 0px 680px ;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    z-index: 1;
+}
+ .footer{
+    width: 1895px;
+    height: 600px;
+    border:  4px solid #1C296C;
+    background-color: #1C296C;
+    z-index: 1;
+    position: absolute;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 150px 0px 0px 0px;
+    padding: 0px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+
+}
+.footer a:hover{ 
+    color: #A9B7FF ; 
+    text-decoration: underline; 
+   }
+.footer h1{
+    font-size: 30px;
+    color: white;
+    margin: 150px 0px 0px 1540px;
+    position: absolute;
+    z-index: 1;
+}
+.footer p{
+    font-size: 25px;
+    color: white;
+    margin: 270px 0px 0px 1540px;
+    position: absolute;
+    z-index: 1;
+}
+.footer .b{
+    margin: -140px 0px 0px 80px;
+    
+    width: 160px;
+
+}
