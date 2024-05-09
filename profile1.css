@@ -11,7 +11,7 @@ body{
 
 .header{
     height: 600px;
-    width: auto;
+    width: 100%;
     background-color: #A9B7FF;
     display:flex;
     flex-wrap: wrap;
