@@ -29,7 +29,8 @@
         <h1 style="margin: 480px 0px 0px 830px;">Trusted By</h1>
     </div>
     
-    <input type="button" value="Join Us Now!" class="s" a href="login2.html">
+   <button id="joinButton" class="s">Join Us Now!</button>
+
 
     <div class="f"></div>
     <img src="Photos/OBJECTS.svg"  class="h">
@@ -38,5 +39,10 @@
         <img src="Photos/depa.png"  class="b">
         <img src="Photos/Rectangle 146.png"  class="d">
     </div>
+    <script>
+        document.getElementById("joinButton").addEventListener("click", function() {
+            window.location.href = "login2.html";
+        });
+    </script>
 </body>
 </html>
