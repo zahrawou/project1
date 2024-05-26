@@ -4,69 +4,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="profile1.css">
-    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')">
+
+    <link rel="stylesheet" href="Profil.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="icon" type="image/png" href="Photos/Logo.svg">
+    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
-
 <body>
-    <div class="header">
-        <img src="Photos/Logo.svg" alt="logo" class="b">
-        <a href="#"> <i class="fa-regular fa-circle-question"></i></a>
-        <p><a href="Home2.html">Home</a> </p>
-        <p style="margin: 40px 0px 0px 1100px;"><a href="About2.html">About us</a> </p>
-        <p style="margin: 40px 0px 0px 1300px;"><a href="profile.html">My Account </a> </p>
-        <p style="margin: 40px 0px 0px 1530px;"><a href="#">Setting</a> </p>
-        <input type="button" value="Log out" a href="#">
-        
-   </div>
-   <img src="Photos/[].png" class="w">
-   <img src="Photos/[].png" class="ww">
-   <div class="border">
-      <h1>Profile</h1>
-      <p class="a">Account Information</p>
-      <div id="verticle-line"></div>
-      <p class="a"style="margin:250px 0px 0px 1334px;font-size:40px">Profile Photo</p>
-      <div class="e"></div>
-      <p class="a" style="margin:440px 0px 0px 120px;font-size: 37px;">First name</p>
-      <input type="text" class="b">
-      <input type="button" value="Edit" class="c" >
+    <!--  -->
+    <!-- PART 1-->
+   
+    <header>
+        <nav>
+          <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"></path></svg></a></li>
+            <li><a href="Home2.html">Home</a></li>
+            <li><a href="About2.html">About</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Setting</a></li>
+            <li><a href="#">Help </a> </li>
+            <li ><button a href="#" class="btnlog"  type="submit">Logout</button></li>
+            <li ><a href="#"> <img class="profile" src="PhotoProject/profilphoto.svg"/></a></li>
+           
+          </ul>
+    
+         
+          <ul>
+          
+            <li class="i1"><a href="#"> <img src="PhotoProject\Logo.svg"/></a></li>
+            <!-- <li class="i2"><a href="#"> <img src="PhotoProject/witeLogo.svg"/></a></li> -->
+            <li class="hideOnMobile"><a href="Home2.html">Home</a></li>
+            <li class="hideOnMobile"><a href="About2.html">About</a></li>
+            <li class="hideOnMobile"><a href="Profile.html">My Account</a></li>
+            <li class="hideOnMobile"><a href="#">Setting</a></li>
+            <li class="help"><a href="#">Help </a> <i class="fa-regular fa-circle-question"></i></li>
+            <li class="hideOnMobile"><button a href="#" class="btnlog"  type="submit">Logout</button></li>
+            <li  class="hideOnMobile"><a href="#"> <img class="profile" src="PhotoProject/profilphoto.svg"/></a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"></path></svg></a></li>
+        </ul>
+        </nav>
       
-      <p class="a" style="margin: 697px 0px 0px 120px;font-size: 37px;">Last name</p>
-      <input type="button" value="Edit" class="c" style="margin:  806px 0px 0px 967px;" >
-      <input type="text" class="b" style=" margin: 790px 0px 0px 120px;">
-      <p class="a" style="margin: 970px 0px 0px 120px;font-size: 37px;">Email</p>
-      <input type="button" value="Edit" class="c" style="margin:  1080px 0px 0px 970px;" >
-      <input type="text" class="b" style=" margin: 1063px 0px 0px 120px;">
-      <p class="a" style="margin: 1243px 0px 0px 120px;font-size: 37px;">Phone Number</p>
-      <input type="button" value="Edit" class="c" style="margin:  1352px 0px 0px 970px;">
-      <input type="text" class="b" style=" margin: 1336px 0px 0px 120px;">
-      <p class="a" style="margin: 1516px 0px 0px 120px;font-size: 37px;">Speciality</p>
-      <input type="button" value="Edit" class="c" style="margin:  1625px 0px 0px 970px;">
-      <input type="text" class="b" style=" margin: 1609px 0px 0px 120px;">
-      <p class="a" style="margin: 1789px 0px 0px 120px;font-size: 37px;">Team</p>
-      <input type="button" value="Edit" class="c" style="margin:  1899px 0px 0px 970px;">
-      <input type="text" class="b" style=" margin: 1882px 0px 0px 120px;">
-      <i class="fa-solid fa-user"></i>
-      <input type="text" class="j">
-      <input type="text" class="j" style="margin: 900px 0px 0px 1250px;">
-      
-     
-   </div>
+        <script>
+          function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+          }
+          function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+          }
+        </script>
 
-   <div class="footer">
-    <img src="Photos/whiteLogo.svg" alt="logo" class="b">
-    <h1 >Contact info</h1>
-    <h1  style="margin: 150px 0px 0px 1170px;">Our servises</h1>
-    <h1  style="margin: 150px 0px 0px 700px;">About ResearchLab</h1>
-    <h1  style="margin: 150px 0px 0px 370px;">Help</h1>
-    <h1  style="margin: 390px 0px 0px 30px;font-size: 40px;">ResearchLab</h1>
-    <p ><a href="#">Anything@exemple.com</a></p>
-    <p style="margin: 270px 0px 0px 1170px;"><a href="#">My Account</a></p>
-    <p style="margin: 370px 0px 0px 1170px;"><a href="#">Setting</a></p>
-    <p style="margin: 270px 0px 0px 700px;"><a href="#">About Us</a></p>
-    <p style="margin: 370px 0px 0px 700px;"><a href="#">Contact Us</a></p>
-    <p style="margin: 270px 0px 0px 370px;"><a href="#">how does it work</a></p>
-    <p style="margin: 370px 0px 0px 370px;"><a href="#">how to edit profile</a></p>
+    </header>
+       <!-- End of the header section -->
+
+
+    <!-- PART 2 --> 
+    
+    <div class="hero-section" >
+       
+    </div>
+    
+<div class="part2">
+  
+    <!-- Border Part -->
+   
+    <div class="Border"> 
+
+        <div class="Prof">  <h1 > Profil</h1></div>
+          <div class="info">
+           <div class ="right"> 
+                <form id="form" class="form">
+                    <p>Account settings  </p>
+                   <br>
+                    <div class="form-control">
+    
+                        <label for="username">First Name</label>
+                        <input type="text" id="name"  value="Ferial" />
+                        
+                         
+                    </div>
+
+                    <div class="form-control">
+    
+                        <label for="username">Last Name</label>
+                        <input type="text" id="name"  value="Zagui" />
+                        
+                         
+                    </div>
+                    
+                    <div class="form-control">
+    
+                        <label for="email">Email</label>
+                        <input type="text" id="email" value="nmaxwell@mail.com" />
+                        
+                                             
+                    </div>
+                     <!-- not detected yet -->
+                    <div class="form-control">
+    
+                        <label for="username"> Phone Number</label>
+                        <input type="text" id="Phone"  value=" 0678509890" />
+                        
+                         
+                    </div>
+
+                    <div class="form-control">
+    
+                        <label for="username">Speciality</label>
+                        <input type="text" id="Spec"  value="Informatique" />
+                        
+                         
+                    </div>
+                    
+                    <h2 for="username">Team</h2>
+                    <select>
+
+                        <option selected class="selected">Choose Your Team</option>
+                        <option>Team1</option>
+                        <option>Team2</option>
+                        <option>Team3</option>
+                      
+                    </select>
+    
+                    <div class="Edit">
+                        <button type="button" class="btn1 ">Edit</button>&nbsp;
+                        <button type="button" class="btn2 ">Cancel</button>
+                    </div>
+
+                </form>
+            
+           </div>
+           <div class="left">
+            <h1>Profile Photo</h1>
+            <div class="Photo">
+                <div> <i class='bx bxs-user-circle'></i> </div>
+               
+                <label class="btnLabel">
+                    <input type="file" class="fileinput">
+                    <p>Edit</p> 
+                </label> &nbsp;
+                
+                <!-- <button class="btn1" type="button"> Edit</i></button> -->
+
+            </div>
+           </div>
+        </div>
+    </div>
+   
+
 </div>
+      
+    <!-- PART 3 -->
+  <!--  -->
+    <footer class="footer">
+        <div class="container">
+           
+    
+            <div class="row">
+    
+                <div class="footer-col">
+                    <div class="Help">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="#">how does it work</a></li>
+                            <li><a href="#">how to Edit  profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="About">
+                        <h4>About ResearchLab</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                    <div class="footer-col">
+                    <div class="Our">
+                        <h4>Our services</h4>
+                        <ul>
+                            <li> <a href="#">My Account</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li><a href="#">Add Project</a></li>
+                            <li><a href="#">View Projects</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                    <div class="footer-col">
+                    <div class="Contac">
+                        <h4>Contac Info</h4>
+                        <ul>
+                            <li> <p> Anything@exampel.com  </p></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+    
+                <div class=".logoF" style=" width: 20%; height:20%; user-select: none">
+                    <img style="width: 50%;" src="PhotoProject/witeLogo.svg">
+                   <h1 style="color:  white; width: 300px;">ResearchLab</h1>
+                 </div>
+    
+            </div>
+        </div>
+    </footer>
+     
+</body>
+</html>
