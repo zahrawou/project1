@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="icon" type="image/png" href="Photos/Logo.svg">
+
     <link rel="stylesheet" href="StyleHome2.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
@@ -20,24 +20,24 @@
             <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"></path></svg></a></li>
             <li><a href="Home2.html">Home</a></li>
             <li><a href="About2.html">About</a></li>
-            <li><a href="profile.html">My Account</a></li>
+            <li><a href="Profile.html">My Account</a></li>
             <li><a href="#">Setting</a></li>
             <li><a href="#">Help </a> </li>
             <li ><button a href="#" class="btnlog"  type="submit">Logout</button></li>
-            <li ><a href="#"> <img class="profile" src="Photos/Logo.svg"/></a></li>
+            <li ><a href="#"> <img class="profile" src="PhotoProject/profilphoto.svg"/></a></li>
           </ul>
     
          
           <ul>
           
-            <li><a href="#"> <img src="Photos\logo.svg"/></a></li>
+            <li><a href="#"> <img src="PhotoProject\Logo.svg"/></a></li>
             <li class="hideOnMobile"><a href="Home2.html">Home</a></li>
             <li class="hideOnMobile"><a href="About2.html">About</a></li>
             <li class="hideOnMobile"><a href="#">My Account</a></li>
             <li class="hideOnMobile"><a href="#">Setting</a></li>
-            <li class="help"><a href="#">Help </a> <i class="fa-regular fa-circle-question"></i></li>
+            <li class="help"><a href="#">Help </a><i class="fa-regular fa-circle-question"></i> </li>
             <li class="hideOnMobile"><button a href="#" class="btnlog"  type="submit">Logout</button></li>
-            <li  class="hideOnMobile"><a href="#"> <img class="profile" src="Photos/profilphoto.svg"/></a></li>
+            <li  class="hideOnMobile"><a href="#"> <img class="profile" src="PhotoProject/profilphoto.svg"/></a></li>
             <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"></path></svg></a></li>
         </ul>
         </nav>
@@ -60,7 +60,7 @@
    <!-- End of the header section -->
 
     <div class="hero-section"  >
-        <img src="Photos/wlcmHome.svg"  class="wlcmH"/>
+        <img src="PhotoProject/wlcmHome.svg"  class="wlcmH"/>
        </div>
 
         </div>
@@ -70,22 +70,38 @@
     <h1> Browse services by category </h1>
         <div class="content">
             
-         <div class="content1">
-            <a href="addproject.html" target="_blank">
-            <img src="Photos/AddIcone.svg"  class="C1"/>
-            <p>Add Project</p>
-            </a>
-         </div>
+           
+                <div class="content1">
+                    <a href="AddProject.html"><img src="PhotoProject/AddIcone.svg"  class="C1"/></a>
+                
+                <a href="AddProject.html"> <p>Add Project</p> </a>
+             </div> 
+            
+        
+            
+              <div class="content1" style="background-color: rgba(158, 163, 190, 0.7);">
+                <a href="#">  <img src="PhotoProject/exam2.svg"  class="C2"/></a>
+                 <a href="#"><p>My Projects</p> </a>
+                 
+              </div>
+            
+        
+           
+            <div class="content1">
+                <a href="#"><img src="PhotoProject/teamicone.svg"  class="C3"/> </a>
+                <!-- <a href="#"> <p>My Team</p>  </a> -->
+                <select>
 
-         <div class="content1" style="background-color: rgba(158, 163, 190, 0.7);">
-            <img src="Photos/exam2.svg"  class="C2"/>
-            <p >My Projects</p>
-         </div>
-
-         <div class="content1">
-            <img src="Photos/teamicone.svg"  class="C3"/>
-            <p>My Team</p>
+                    <option selected class="selected">My Team</option>
+                    <option>Team1</option>
+                    <option>Team2</option>
+                    <option>Team3</option>
+                  
+                </select>
             </div>
+           
+
+
          </div>
          <div class="c4"> <div class="content4"></div> </div>
         
@@ -96,11 +112,11 @@
 <div class="lastpart">
    
    <div class="leftphoto">
-    <img src="Photos/homePhoto.svg"/>
+    <img src="PhotoProject/homePhoto.svg"/>
    </div>
   <div class="Text"> 
    <div class="titr"> 
-    <img  class="arrow" src="Photos/Arrow.svg"/>
+    <img  class="arrow" src="PhotoProject/Arrow.svg"/>
     <div class="t1"> 
    <h1>LET'S BUILD<br> 
       SOMETHING GREAT. </h1>
@@ -108,31 +124,31 @@
 </div> 
  <div class="txt"> 
    <div class="rightbtn">
-    <img src="Photos/righticone.svg"/>
+    <img src="PhotoProject/righticone.svg"/>
     <P > If you want to add a new project, follow the following: </P> 
     
    </div>
 
    <div class="rightbtn">
-    <img src="Photos/righticone.svg"/>
+    <img src="PhotoProject/righticone.svg"/>
     <p > Click on the Add Project button at the top.</p>
     
    </div>
 
    <div class="rightbtn">
-    <img src="Photos/righticone.svg"/>
+    <img src="PhotoProject/righticone.svg"/>
     <p>Add a name to your project and fill in all your information.</p>
     
    </div>
 
    <div class="rightbtn">
-    <img src="Photos/righticone.svg"/>
+    <img src="PhotoProject/righticone.svg"/>
     <p>It is necessary to add a PDF file.</p>
     
    </div>
 
    <div class="rightbtn">
-    <img src="Photos/righticone.svg"/>
+    <img src="PhotoProject/righticone.svg"/>
     <p class="p5">click done when you finish.</p>
   </div>
   
@@ -175,7 +191,7 @@
                     <ul>
                         <li> <a href="#">My Account</a></li>
                         <li><a href="#">Setting</a></li>
-                        <li><a href="addproject.html">Add Project</a></li>
+                        <li><a href="#">Add Project</a></li>
                         <li><a href="#">View Projects</a></li>
                     </ul>
                 </div>
@@ -193,7 +209,7 @@
             
 
             <div class=".logoF" style=" width: 20%; height:20%; user-select: none">
-                <img style="width: 50%;" src="Photos/witeLogo.svg">
+                <img style="width: 50%;" src="PhotoProject/witeLogo.svg">
                <h1 style="color:  white; width: 300px;">ResearchLab</h1>
              </div>
 
