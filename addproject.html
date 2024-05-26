@@ -4,108 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AddProject</title>
-    <link rel="icon" type="image/png" href="Photos/Logo.svg">
-    <link rel="stylesheet" href="addproject1.css">
+
+    <link rel="stylesheet" href="AddProject.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')">
-    
-    
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
 </head>
 <body>
+    <!--  -->
+    <!-- PART 1-->
    
-    <div class="header">
-        <img src="Photos/Logo.svg" alt="logo" class="b">
-        <a href="#"> <i class="fa-regular fa-circle-question"></i></a>
-        <p><a href="Home2.html">Home</a> </p>
-        <p style="margin: 40px 0px 0px 1100px;"><a href="About2.html">About us</a> </p>
-        <p style="margin: 40px 0px 0px 1300px;"><a href="profile.html">My Account </a> </p>
-        <p style="margin: 40px 0px 0px 1530px;"><a href="#">Setting</a> </p>
-        <input type="button" value="Log out" a href="#">
-        <p class="title"> Create your  </p> 
-        <p class="title1"> Project now  </p>
-        <img src="Photos/OBJECTS.svg" class="dd">
-        <img src="Photos/Ellipse.png" class="ss" >
+    <header>
+        <nav>
+          <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"></path></svg></a></li>
+            <li><a href="Home2.html">Home</a></li>
+            <li><a href="About2.html">About</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Setting</a></li>
+            <li><a href="#">Help </a> </li>
+            <li ><button a href="#" class="btnlog"  type="submit">Logout</button></li>
+            <li ><a href="#"> <img class="profile" src="PhotoProject/profilphoto.svg"/></a></li>
+           
+          </ul>
     
-    </div>
-
-    <h1 class="sp"> Add product</h1>
-  
-
-    <div class="border">
-        <input type="text" placeholder="Name product" class="a">
-        <div class="c">
-        <i class="fa-sharp fa-solid fa-u"></i>
-        <i class="fa-sharp fa-solid fa-italic"></i>
-        
-        <i class="fa-sharp fa-solid fa-b"></i>
-        <div id="horisontale-line6"></div>
-        <div id="horisontale-line"></div>
-        <i class="fa-solid fa-align-left"> </i>
-        <i class="fa-solid fa-align-center"></i>
-        <i class="fa-solid fa-align-right"></i>
-        <div id="horisontale-line2"></div>
-        <i class="fa-solid fa-list"></i>
-        <i class="fa-solid fa-list-ol"></i>
-        <div id="horisontale-line3"></div>
-        <div id="horisontale-line4"></div>
-        
-        <i class="fa-solid fa-image"></i>
-        
-        
-      
-        </div>
-            <textarea placeholder="Enter your Description" class="b"></textarea>
-        
-        <input type="submit" value="Done" class="d" >
-        
-        <div class="border1"> 
-          <h1>Your Basic Information</h1> 
-          <div id="verticle-line"></div>
-          <p>Email Address</p>
-          <input type="text" >
-          <p style="margin: 20px 0px 0px 30px;"> First Name</p>
-          <input type="text" >
-          <p style="margin: 20px 0px 0px 30px;">Last Name</p>
-          <input type="text" >
-          <p style="margin: 20px 0px 0px 30px;">Type of Project </p>
-          <select class="a" >
-            <option ></option>
-            <option >one year</option>
-            <option >6 mounth</option>
-        </select>
+         
+          <ul>
           
+            <li class="i1"><a href="#"> <img src="PhotoProject\Logo.svg"/></a></li>
+            <!-- <li class="i2"><a href="#"> <img src="PhotoProject/witeLogo.svg"/></a></li> -->
+            <li class="hideOnMobile"><a href="Home2.html">Home</a></li>
+            <li class="hideOnMobile"><a href="About2.html">About</a></li>
+            <li class="hideOnMobile"><a href="Profile.html">My Account</a></li>
+            <li class="hideOnMobile"><a href="#">Setting</a></li>
+            <li class="help"><a href="#">Help </a> <i class="fa-regular fa-circle-question"></i></li>
+            <li class="hideOnMobile"><button a href="#" class="btnlog"  type="submit">Logout</button></li>
+            <li  class="hideOnMobile"><a href="#"> <img class="profile" src="PhotoProject/profilphoto.svg"/></a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"></path></svg></a></li>
+        </ul>
+        </nav>
+      
+        <script>
+          function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+          }
+          function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+          }
+        </script>
+
+    </header>
+       <!-- End of the header section -->
+
+
+    <!-- PART 2 -->
+    
+    <div class="hero-section"  >
+
+        <h1 class="left">Fire Up Your <br>project With Us</h1>
+        <img  class="rghit" src="PhotoProject/teamPh2.svg" alt="">
+       
+       
+    </div>
+    
+<div class="part2">
+  
+    <!-- Border Part -->
+    <h1 > Add product</h1>
+    <div class="Border"> 
+      
+        <div class="Info">
+          <div class="left">
+            <div class="form-controlLeft">
+    
+                <input type="text" id="name" placeholder=" Enter Product Name" />
+                <span style="color:red" id="name_error"></span>
+                 
+            </div>
+            <div class="project"> 
+            <h3>Advanced Text Editor</h3>
+            <form action="" method="post">
+                <textarea name="textarea" id="default"  ></textarea>
+                <!-- <input type="submit" value="submit"> -->
+            </form>
+            <script src="tinymce/tinymce.min.js"></script>
+            <script src="script.js"></script>
+        </div>
+           </div>
+           <div class ="right"> 
+                <form id="form" class="form">
+                    <p>Your Basic Information</p>
+                   <br>
+                    <div class="form-control">
+    
+                        <label for="username">Name</label>
+                        <input type="text" id="name" placeholder="Enter username" />
+                        <span style="color:red" id="name_error"></span>
+                         
+                    </div>
+    
+                    <div class="form-control">
+    
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter email" />
+                        <span style="color:red" id="email_error"></span>
+                                             
+                    </div>
+    
+                    <div class="form-control">
+    
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password" />
+                        <span style="color:red" id="pass_error"></span>
+    
+                                             
+                    </div>
+                    <!-- not detected yet -->
+                    <div class="form-control">
+    
+                        <label for="password">Type of Project</label>
+                        <input type="password" id="password" placeholder="Select Type" />
+                        <span style="color:red" id="pass_error"></span>
+    
+                                             
+                    </div>
+    
+                </form>
+            
+           </div>
 
         </div>
-       
-        <h1 class="border2">Document</h1>
-        <textarea  placeholder="pdf Document" class="aa"></textarea>
-        <input type="button"  value ="Upload      " class="dd">
-        <i class="fa-solid fa-cloud-arrow-up"></i>
-       
-    
-    
-    
-    </div>
 
- 
-    <div class="footer">
-        <img src="Photos/whiteLogo.svg" alt="logo" class="b">
-        <h1 >Contact info</h1>
-        <h1  style="margin: 150px 0px 0px 1170px;">Our servises</h1>
-        <h1  style="margin: 150px 0px 0px 700px;">About ResearchLab</h1>
-        <h1  style="margin: 150px 0px 0px 370px;">Help</h1>
-        <h1  style="margin: 390px 0px 0px 30px;font-size: 40px;">ResearchLab</h1>
-        <p ><a href="#">Anything@exemple.com</a></p>
-        <p style="margin: 270px 0px 0px 1170px;"><a href="#">My Account</a></p>
-        <p style="margin: 370px 0px 0px 1170px;"><a href="#">Setting</a></p>
-        <p style="margin: 270px 0px 0px 700px;"><a href="#">About Us</a></p>
-        <p style="margin: 370px 0px 0px 700px;"><a href="#">Contact Us</a></p>
-        <p style="margin: 270px 0px 0px 370px;"><a href="#">how does it work</a></p>
-        <p style="margin: 370px 0px 0px 370px;"><a href="#">how to edit profile</a></p>
+        <div class="Uplod">
+            <div class="U1">
+                <div class="U2">
+                <h2 style=" margin-top:5px;margin-left: 3%;"> DOCUMENT</h2>
+                </div>
+                <div class="file-upload">
+                    <i class='bx bxs-file-pdf'></i>
+                    <span class="file-upload__label" > </span>
+                    <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple>
+                    <button class="file-upload__button" type="button"> Upload <i class='bx bxs-cloud-upload'></i></button>
+                  
+                </div>
+                <script src="upl.js"></script>
+            </div>
+            
+            <button a href="#" class="btnlog"  type="submit">Done</button>
+
+        </div>
+
     </div>
+   
+
+</div>
+      
+    <!-- PART 3 -->
+  <!--  -->
+    <footer class="footer">
+        <div class="container">
+           
     
+            <div class="row">
+    
+                <div class="footer-col">
+                    <div class="Help">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="#">how does it work</a></li>
+                            <li><a href="#">how to Edit  profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="About">
+                        <h4>About ResearchLab</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                    <div class="footer-col">
+                    <div class="Our">
+                        <h4>Our services</h4>
+                        <ul>
+                            <li> <a href="#">My Account</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li><a href="#">Add Project</a></li>
+                            <li><a href="#">View Projects</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                    <div class="footer-col">
+                    <div class="Contac">
+                        <h4>Contac Info</h4>
+                        <ul>
+                            <li> <p> Anything@exampel.com  </p></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+    
+                <div class=".logoF" style=" width: 20%; height:20%; user-select: none">
+                    <img style="width: 50%;" src="PhotoProject/witeLogo.svg">
+                   <h1 style="color:  white; width: 300px;">ResearchLab</h1>
+                 </div>
+    
+            </div>
+        </div>
+    </footer>
+     
 </body>
 </html>
