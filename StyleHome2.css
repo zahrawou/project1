@@ -1,3 +1,4 @@
+
 *{
   margin: 0; padding: 0;
   box-sizing: border-box;
@@ -25,8 +26,9 @@ header nav{
   justify-content: center;
   align-items: center;
   position: fixed; 
-  background-color:white;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(169, 183, 255,0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   height: 100px;
   width:100%;
   z-index:100; 
@@ -222,7 +224,7 @@ nav li .profile:hover{
     
   }
 
-  .content1{
+  .content  .content1{
     display: flex;
     justify-content:center;
     align-items: center;
@@ -242,9 +244,9 @@ nav li .profile:hover{
   }
 
 
-  .content1 img{
-    width: 50%;
-    height: 50%;
+  .content1 img {
+    width: 90%;
+    height: 90%;
  
     
     
@@ -276,6 +278,48 @@ nav li .profile:hover{
     
   }
   
+  select{
+   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 60%;
+    padding: 10px 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #1C296C; 
+    background-repeat: no-repeat;
+    background-size: 47px;
+    background-position: 247px 0.5px;
+    outline: none;
+   
+   
+  }
+  form h2{
+    font-weight: 300;
+    font-size: 18px;
+  }
+  select::-ms-expand{
+    display: none;
+  }
+
+  select option{
+    background-color: #A9B7FF;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .selected{
+    display: none;
+    background-color: #A9B7FF;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 20px;
+  }
   
 
 
@@ -658,6 +702,18 @@ justify-content: center;
  
  } 
 
+ nav ul li img{    /* logo */
+  width: 70px;
+  height:90px ;
+
+}
+
+header nav{
+  height: 90px;
+  width:100%;
+ 
+}
+
 }
 
 @media(max-width: 650px) and (min-width:500px ){
@@ -752,7 +808,7 @@ justify-content: center;
   
    
    }
-	 nav ul li img{    /* logo */
+   nav ul li img{    /* logo */
     width: 50px;
     height:70px ;
   
@@ -868,7 +924,8 @@ justify-content: center;
     font-size: 30px;
     
   }
-	 nav ul li img{    /* logo */
+
+  nav ul li img{    /* logo */
     width: 50px;
     height:70px ;
   
@@ -884,20 +941,26 @@ justify-content: center;
 
 /*  */
 @media(max-width: 800px){
+ 
   nav li img{    /* logo */
     width: 80px;
     height:100px ;
   
   }
-  .hideOnMobile,nav ul .help{
+  .hideOnMobile,  nav ul .help{
     display: none;
   }
 
   .menu-button{
     display: block;
   }
+
+ 
+
+ 
 }
 @media(max-width: 400px){
+ 
   .sidebar{
     width: 100%;
   }
