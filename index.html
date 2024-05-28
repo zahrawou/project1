@@ -1,48 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="Welcomepage1.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WelcomePage</title>
-    <link rel="stylesheet" href="Welcomepage1.css">
-    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="icon" type="image/png" href="Photos/Logo.svg">
+    <title>Welcome</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
-    <div class="header">
-        <img src="Photos/Logo.svg" alt="logo" class="b" >
-        <p><a href="Home2.html"> Home</a> </p>
-        <p style="margin: 30px 0px 0px 70px;"><a href="About2.html">About us</a></p>
-        <p style="margin: 30px 0px 0px 70px;"><a href="profile.html">  My Account</a></p>
-        <p style="margin: 30px 0px 0px 70px;"><a href="#">Setting</a></p>
+ <header>
+    <div class="nav2"></div>
+    <nav>
         
-    </div>
+       
+        <img src="PhotoProject\logo.svg" class="logo"/>
+        
+         
+        <div class="hmark"> 
 
-    <div class="a">
-        <h1>Research Lab<br>
-            When all your research is<br>
-            preserved with us
-        </h1>
-        <p>You can add all your research here !</p>
-        <h1 style="margin: 480px 0px 0px 830px;">Trusted By</h1>
-    </div>
+            <div class="help">
+                <a href="#">help</a>
+            </div>
+            
+                <img src="PhotoProject\mark2.svg" class="mark"/>
+           
+            
+            </div>
+        
+  
+        
+
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+
+            <li>
+                <a href="#">My Account</a>
+            </li>
+
+            <li>
+                <a href="#">Setting</a>
+            </li>
+          
+            <li>
+              
+                <button a href="#" class="btnlog"  type="submit">Logout</button>
+               
+
+            </li>
+            <li>
+                <a href="#">
+                    <img src="PhotoProject/profilphoto.svg" class="profile"/>
+                </a>
+               
+
+            </li>
+        
+        </ul>
+    </nav>
+</header>
+
+<section>
+   
+       <div class="Welc">
+        <div class="div1" >
+            <p>Research Lab <br>when all your research is <br> preserved with us.<br> you can add all your research here!</p>
+
+           
+            <button  class="btnlog2" type="submit" onclick="location.href='login2.html'">Join Us Now!</button>
+
+         </div>
+       
+<div   class="img1"> <img src="PhotoProject/CycleB (1).svg"/> </div>
+       
     
-   <button id="joinButton" class="s">Join Us Now!</button>
-
-
-    <div class="f"></div>
-    <img src="Photos/OBJECTS.svg"  class="h">
-    <div class="c">
-        <img src="Photos/Rectangle 145.png"  class="a">
-        <img src="Photos/depa.png"  class="b">
-        <img src="Photos/Rectangle 146.png"  class="d">
     </div>
-    <script>
-        document.getElementById("joinButton").addEventListener("click", function() {
-            window.location.href = "login2.html";
-        });
-    </script>
+    <!-- <div class="par2"> -->
+        <div class="bay">   <div class="img2">  <img src=" PhotoProject/Rectangle 146 (1).svg" /></div>  </div>
+    <!-- </div> -->
+    
+</section>
+
 </body>
 </html>
