@@ -1,4 +1,4 @@
-
+ 
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -309,11 +309,37 @@
     color: black;
 }
 
+.form-control select{
+  margin: 0 auto;
+   margin-top: 5%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 90%;
+  padding: 2% 5%;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background-color: #A9B7FF;
+  color: #1C296C;
+  border: 6px solid #A9B7FF;
+  border-radius: 5px;  
+  background-image: url("Photos/Arraw.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 90% 50%;
+  outline: none;
+  box-shadow: 0 0 20px rgba(20,20,30,0.25);
+ 
+}
+
 .form-control label {
 	color: black;
 	display: block;
 	margin-bottom: 5px;
-	font-weight: 300;
+	font-weight: 500;
 }
 
 .form-control input {
